@@ -48,7 +48,7 @@ const DiscoverSection: React.FC<DiscoverSectionProps> = ({
     };
 
     try {
-      const response = await axios.post('http://localhost:3001/api/products', newProduct);
+      const response = await axios.post('http://85.241.217.184:3001/api/products', newProduct);
       console.log('Product added:', response.data);
       // Update your state or perform additional actions here
     } catch (error) {
