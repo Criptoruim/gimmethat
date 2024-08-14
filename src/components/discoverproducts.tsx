@@ -42,7 +42,7 @@ const DiscoverProducts: React.FC<DiscoverProductsProps> = ({
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/products');
+        const response = await axios.get('http://85.241.217.184:3001/api/products');
         setProducts(response.data);
         setLoading(false);
       } catch (err) {
@@ -58,7 +58,7 @@ const DiscoverProducts: React.FC<DiscoverProductsProps> = ({
   if (error) return <p>{error}</p>;
 
   // Base URL for images
-  const imageBaseUrl = 'http://localhost:3001/uploads/';
+  const imageBaseUrl = 'http://85.241.217.184:3001/uploads/';
 
   return (
     <>
