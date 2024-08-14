@@ -30,7 +30,7 @@ const AddProduct: React.FC<AddProductProps> = ({ addingTo, onAddProduct, onCance
         formData.append('picture', picture);
       }
   
-      const response = await axios.post('http://localhost:3001/api/products', formData, {
+      const response = await axios.post('http://85.241.217.184:3001/api/products', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
